@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    int a[n];
+
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a[i];
+    }
+
+    int key;
+    cin >> key;
+
+    int find = 0;
+
+    for (int i = 0; i < n; i++)
+    {
+        if (key == a[i])
+        {
+            cout << i;
+            find = 1;
+        }
+
+        else
+        { 
+            i++;
+        }
+    }
+
+    if (find == 0)
+    {
+        cout << " key doesnet exists";
+    }
+
+    return 0;
+}
